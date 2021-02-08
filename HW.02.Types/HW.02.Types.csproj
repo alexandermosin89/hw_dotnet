@@ -6,8 +6,4 @@
     <RootNamespace>HW._02.Types</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="assets\" />
-  </ItemGroup>
-
 </Project>
