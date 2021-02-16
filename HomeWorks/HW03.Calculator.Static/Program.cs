@@ -2,9 +2,9 @@
 
 namespace HW03.Calculator.Static
 {
-    class Program
+   static class Calculator
     {
-        static double Add()
+        public static double Add()
         {
             Console.WriteLine("");
             Console.WriteLine("Суммирование");
@@ -15,7 +15,8 @@ namespace HW03.Calculator.Static
             double result = a + b;
             return result;
         }
-        static double Sub()
+
+        public static double Sub()
         {
             Console.WriteLine("");
             Console.WriteLine("Вычитание");
@@ -26,7 +27,8 @@ namespace HW03.Calculator.Static
             double result = a - b;
             return result;
         }
-        static double Mult()
+
+        public static double Mult()
         {
             Console.WriteLine("");
             Console.WriteLine("Умножение");
@@ -37,7 +39,8 @@ namespace HW03.Calculator.Static
             double result = a * b;
             return result;
         }
-        static double Div()
+
+        public static double Div()
         {
             Console.WriteLine("");
             Console.WriteLine("Деление");
@@ -48,7 +51,8 @@ namespace HW03.Calculator.Static
             double result = a / b;
             return result;
         }
-        static double Exp()
+
+        public static double Exp()
         {
             Console.WriteLine("");
             Console.WriteLine("Возведение в степень");
@@ -59,7 +63,8 @@ namespace HW03.Calculator.Static
             double result = Math.Pow(a, b);
             return result;
         }
-        static double Sq()
+
+        public static double Sq()
         {
             Console.WriteLine("");
             Console.WriteLine("Площадь окружности");
@@ -68,23 +73,20 @@ namespace HW03.Calculator.Static
             double result = 3.14 * a * a;
             return result;
         }
-
+    }
+    class Program
+    {
         static void Main(string[] args)
-        {
-            Add();
-            Console.WriteLine("результат суммирования = " + Add());
-            Sub();
-            Console.WriteLine("результат вычитания = " + Sub());
-            Mult();
-            Console.WriteLine("результат умножения = " + Mult());
-            Div();
-            Console.WriteLine("результат деления = " + Div());
-            Exp();
-            Console.WriteLine("результат возведения в степень = " + Exp());
-            Sq();
-            Console.WriteLine("площадь круга = " + Sq());
+        {          
+            Console.WriteLine("результат суммирования = " + Calculator.Add());
+            Console.WriteLine("результат вычитания = " + Calculator.Sub());
+            Console.WriteLine("результат умножения = " + Calculator.Mult());
+            Console.WriteLine("результат деления = " + Calculator.Div());
+            Console.WriteLine("результат возведения в степень = " + Calculator.Exp());
+            Console.WriteLine("площадь круга = " + Calculator.Sq());
             Console.ReadKey();
-
         }
+
     }
 }
+

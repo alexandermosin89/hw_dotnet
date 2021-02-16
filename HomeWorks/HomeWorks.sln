@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW03.Calculator", "HW03.Calculator\HW03.Calculator.csproj", "{786E05D9-1240-4F88-96CF-1665B9484EF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW03.Calculator.Static", "HW03.Calculator.Static\HW03.Calculator.Static.csproj", "{02F742E3-865B-46B5-B2EB-C054E08B6DF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW03.Calculator.Static", "HW03.Calculator.Static\HW03.Calculator.Static.csproj", "{02F742E3-865B-46B5-B2EB-C054E08B6DF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW03.Birthday", "HW03.Birthday\HW03.Birthday.csproj", "{B2FE2AA2-A373-49D6-AF77-EC8E6A5356A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{02F742E3-865B-46B5-B2EB-C054E08B6DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02F742E3-865B-46B5-B2EB-C054E08B6DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02F742E3-865B-46B5-B2EB-C054E08B6DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FE2AA2-A373-49D6-AF77-EC8E6A5356A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FE2AA2-A373-49D6-AF77-EC8E6A5356A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FE2AA2-A373-49D6-AF77-EC8E6A5356A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FE2AA2-A373-49D6-AF77-EC8E6A5356A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
