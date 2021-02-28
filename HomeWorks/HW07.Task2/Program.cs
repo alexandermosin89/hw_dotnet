@@ -8,9 +8,9 @@ namespace HW07.Task2
         {
             Console.WriteLine("write the your text using \" \" as separator");
             string txt = Console.ReadLine();
-            //delmaxlengthw(txt);
-            //changewords(txt);
-            //howmuch(txt);
+            delmaxlengthw(txt);
+            changewords(txt);
+            howmuch(txt);
             workwitharray(txt);
         }
         static void delmaxlengthw(string txt)
@@ -75,10 +75,16 @@ namespace HW07.Task2
         static void workwitharray(string txt)
         {
             string[] str = txt.Split(" ");
+            Array.Sort(str, (x1, x2) => x1.Length.CompareTo(x2.Length));
+            for (int i = 0  ; i < str.Length / 2; i++)
+                {
+                    string tmp = str[i];
+                    str[i] = str[str.Length - i - 1];
+                    str[str.Length - i - 1] = tmp;
+                }
             for (int i = 0; i < str.Length; i++)
-            {
-               
-            }
+                Console.Write(str[i] + " ");
         }
+
     }
 }
