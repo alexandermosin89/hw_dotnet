@@ -56,14 +56,14 @@ namespace HW07.Task2
             str[max] = minword;
             str[min] = maxword;
             //Console.WriteLine(maxword + " " + minword);
-            for (int i = 0; i<str.Length; i++)
-            Console.Write(str[i] + " ");
+            for (int i = 0; i < str.Length; i++)
+                Console.Write(str[i] + " ");
         }
         static void howmuch(string txt)
         {
             int letters = 0;
             int chars = 0;
-            for (int i = 0; i<txt.Length; i++)
+            for (int i = 0; i < txt.Length; i++)
             {
                 if (char.IsLetter(txt[i]))
                     letters++;
@@ -76,12 +76,12 @@ namespace HW07.Task2
         {
             string[] str = txt.Split(" ");
             Array.Sort(str, (x1, x2) => x1.Length.CompareTo(x2.Length));
-            for (int i = 0  ; i < str.Length / 2; i++)
-                {
-                    string tmp = str[i];
-                    str[i] = str[str.Length - i - 1];
-                    str[str.Length - i - 1] = tmp;
-                }
+            for (int i = 0; i < str.Length / 2; i++)
+            {
+                string tmp = str[i];
+                str[i] = str[str.Length - i - 1];
+                str[str.Length - i - 1] = tmp;
+            }
             for (int i = 0; i < str.Length; i++)
                 Console.Write(str[i] + " ");
         }
